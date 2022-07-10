@@ -68,8 +68,7 @@
               "browserTarget": "cat-monitoring:build:production"
             },
             "development": {
-              "browserTarget": "cat-monitoring:build:development",
-              "proxyConfig": "src/proxy.conf.json"
+              "browserTarget": "cat-monitoring:build:development"
             }
           },
           "defaultConfiguration": "development"
