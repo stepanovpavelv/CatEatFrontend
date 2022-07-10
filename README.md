@@ -1,2 +1,2 @@
 # CatEatFrontend
-Aplication for visual monitoring of previously entered indications.
+Application for visual monitoring of previously entered indications.
