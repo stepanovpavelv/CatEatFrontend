@@ -33,6 +33,6 @@ Main information is on official page: <a>https://angular.io/guide/deployment#dep
     * `docker tag cat-monitoring DOCKER_HUB_NAME/cat-monitoring`
     * `docker push DOCKER_HUB_NAME/cat-monitoring`
 
-## Deploy to another hosting provider using docker-compose
+## Deploy using docker-compose
 1. Create docker-compose.yml file on the root repository folder;
 2. Run this with: `docker-compose up -d`
