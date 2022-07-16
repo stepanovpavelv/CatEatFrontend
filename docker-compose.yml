@@ -8,4 +8,4 @@ services:
       context: ./cat-monitoring
       dockerfile: Dockerfile
     ports:
-      - "4200:80"
+      - "80:80"
