@@ -4,7 +4,7 @@ Application for visual monitoring of previously entered indications.
 ## Deploy to Github Pages
 Main information is on official page: <a>https://angular.io/guide/deployment#deploy-to-github-pages</a>
 
-## Deploy to Docker
+## Deploy to Dockerhub
 1. First you have to create Dockerfile with some instructions;
     * setup current directory for app;
     * copy package.json & package-lock.json and install libraries;
@@ -25,13 +25,17 @@ Main information is on official page: <a>https://angular.io/guide/deployment#dep
 4. Build with Docker (on the example of my app). 
     * Be careful with the dot at the end in the next command - this is the current directory;
     * `docker build -t cat-monitoring .`
-    * `docker run -d -p 8080:80 cat-monitoring:latest`
+    * `docker run -d -p 80:80 cat-monitoring:latest`
     * You may check current image with the command: `docker image ls`
 
 5. Publication to Dockerhub
     * `docker login`
     * `docker tag cat-monitoring DOCKER_HUB_NAME/cat-monitoring`
     * `docker push DOCKER_HUB_NAME/cat-monitoring`
+
+## Deploy using docker-compose
+1. Create docker-compose.yml file on the root repository folder;
+2. Run this with: `docker-compose up -d`
 
 ## Deploy as Node.js application
 1. Create index.js file (as it is represented in repository). There will be instructions for angular's dist folder;
