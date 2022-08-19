@@ -32,3 +32,9 @@ Main information is on official page: <a>https://angular.io/guide/deployment#dep
     * `docker login`
     * `docker tag cat-monitoring DOCKER_HUB_NAME/cat-monitoring`
     * `docker push DOCKER_HUB_NAME/cat-monitoring`
+
+## Deploy as Node.js application
+1. Create index.js file (as it is represented in repository). There will be instructions for angular's dist folder;
+2. Push to new zip-archive angular app's dist folder, index.js and package.json;
+3. Deploy this archive to hosting;
+4. You are well done!
